@@ -1,0 +1,19 @@
+name: Variables in workflow
+
+on:
+  workflow_dispatch
+
+env:
+  v1: gcp
+
+
+jobs:
+  job1:
+    runs-onn: ubunutu-latest
+
+    env:
+      v2: gcp11
+    
+    steps:
+      - name: "Print variables"
+        run: echo "$v2 , hello , $v1"
