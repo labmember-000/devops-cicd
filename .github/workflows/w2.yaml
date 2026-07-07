@@ -9,7 +9,7 @@ env:
 
 jobs:
   job1:
-    runs-on: ubunutu-latest
+    runs-on: ubuntu-latest
 
     env:
       v2: gcp11
